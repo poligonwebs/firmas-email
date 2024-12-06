@@ -42,7 +42,7 @@
         .right-column {
             display: flex;
             flex-direction: column;
-            padding-left: 30px; /* Espaciado izquierdo de la caja de info respecto a la imagen */
+            padding-left: 26px; /* Espaciado izquierdo de la caja de info respecto a la imagen */
             box-sizing: border-box;
         }
 
@@ -55,7 +55,7 @@
             color: #FFFFFF;
             display: flex;
             align-items: center;
-            padding-left: 30px;
+            padding-left: 26px;
             border-radius: 0 0 0 10px; /* Borde redondeado sólo en la parte inferior izquierda */
             font-weight: 150;
             font-size: 24px;
@@ -74,7 +74,11 @@
         .info-line {
             display: flex;
             align-items: center;
-            margin-bottom: 2px; /* Espaciado entre líneas de texto interno */
+            margin-bottom: 0px; /* <-- Aquí puedes reducir el valor, por ejemplo a 1px o 0px */
+        }
+
+        .sectorP{
+          margin-bottom: 1px;
         }
 
         .info-text {
@@ -85,7 +89,7 @@
         /* Estilo "JEFA DEL PROYECTO EQ1" */
         .job-title {
             color: #079F90;
-            padding-left: 30px;
+            padding-left: 26px;
             font-weight: 400;
             font-size: 16px;
             line-height: normal;
@@ -102,7 +106,7 @@
             letter-spacing: normal;
             margin-bottom: 5px;
             width: 600px;
-            padding-left: 30px;
+            padding-left: 26px;
         }
 
         /* Línea con teléfono y celular */
@@ -111,7 +115,7 @@
         .social-line svg,
         .address-line svg {
             margin-right: 5px;
-            padding-left: 30px;
+            padding-left: 26px;
         }
 
         .contact-line .info-text,
@@ -143,20 +147,19 @@
     <div class="container">
         <div class="left-column">
             <!-- Imagen de la izquierda 220x220px -->
-            <img src="FIRMA-A-150X150.gif" alt="Florencia P. Baccaro Oses">
-        </div>
+            <img src="FIRMA-A-150X150.gif" alt="Florencia P. Baccaro Oses 
 
         <div class="right-column">
             <!-- Caja del título -->
             <div class="title-box">
-                Florencia P. Baccaro Oses
+              Florencia P. Baccaro Oses 
             </div>
 
             <div class="info-box">
                 <div class="info-line">
                     <span class="info-text job-title">JEFA DE PROYECTO EQ1</span>
                 </div>
-                <div class="info-line">
+                <div class="info-line sectorP">
                     <span class="info-text company-text">SOCORRO MÉDICO PRIVADO S.A. EQ1 S.A.</span>
                 </div>
 
@@ -188,7 +191,7 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    <span class="info-text">(5411) 4000-6672 | Cel. (54911) 3788-7750</span>
+                    <span class="info-text">(5411) 4000-6672 | Cel. (54911) 3032-6213</span>
                 </div>
 
                 <!-- Social line eq1_insumos.medicos (Instagram) -->
