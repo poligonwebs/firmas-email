@@ -11,148 +11,157 @@
 
     <title>Contacto</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-        }
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+      }
 
-        .container {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            box-sizing: border-box;
-        }
+      .social-line{
+       padding-top: 10px;
+      }
 
-        .left-column {
-            width: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            padding-top: 20px;
-            box-sizing: border-box;
-        }
 
-        .left-column img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
+      .container {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          box-sizing: border-box;
+      }
 
-        .right-column {
-            display: flex;
-            flex-direction: column;
-            padding-left: 26px; /* Espaciado izquierdo de la caja de info respecto a la imagen */
-            box-sizing: border-box;
-        }
+      .left-column {
+          width: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          padding-top: 20px;
+          box-sizing: border-box;
+      }
 
-        /* Caja del título (nombre) */
-        .title-box {
-            width: 400px;
-            
-            height: 32px;
-            background: #0252A3;
-            color: #FFFFFF;
-            display: flex;
-            align-items: center;
-            padding-left: 26px;
-            border-radius: 0 0 0 10px; /* Borde redondeado sólo en la parte inferior izquierda */
-            font-weight: 150;
-            font-size:18px;
-            letter-spacing: normal;
-            
-        }
+      .left-column img {
+          width: 144px;
+          height: 144px;
+          object-fit: cover;
+      }
 
-        /* Caja de información debajo del título */
-        .info-box {
-            margin-top: 5px; /* 5px con respecto al título arriba */
-            width: 600px; /* Contenido total de contacto */
-            display: flex;
-            flex-direction: column;
-        }
+      .right-column {
+          display: flex;
+          flex-direction: column;
+          padding-left: 26px; /* Espaciado izquierdo de la caja de info respecto a la imagen */
+          box-sizing: border-box;
+      }
 
-        .info-line {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0px; /* <-- Aquí puedes reducir el valor, por ejemplo a 1px o 0px */
-        }
-
-        .sectorP{
-          margin-bottom: 1px;
-        }
-
-        .info-text {
-            display: inline-block;
+      /* Caja del título (nombre) */
+      .title-box {
+          width: 400px;
           
-        }
+          height: 32px;
+          background: #0252A3;
+          color: #FFFFFF;
+          display: flex;
+          align-items: center;
+          padding-left: 26px;
+          border-radius: 0 0 0 10px; /* Borde redondeado sólo en la parte inferior izquierda */
+          font-weight: 150;
+          font-size:18px;
+          letter-spacing: normal;
+          
+      }
 
-        /* Estilo "JEFA DEL PROYECTO EQ1" */
-        .job-title {
-            color: #079F90;
-            padding-left: 26px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: normal;
-            letter-spacing: 0.00875rem;
-            
-        }
+      /* Caja de información debajo del título */
+      .info-box {
+          margin-top: 5px; /* 5px con respecto al título arriba */
+          width: 600px; /* Contenido total de contacto */
+          display: flex;
+          flex-direction: column;
+      }
 
-        .job-title_subtitle {
-            color: #079F90;
-            padding-left: 26px;
-            font-weight: 200;
-            font-size: 16px;
-            line-height: normal;
-            letter-spacing: 0.00875rem;
-            padding-left: 4px;
-            
-        }
+      .info-line {
+          display: flex;
+          align-items: center;
+          padding-top: 5px;
+          margin-bottom: 0px; /* <-- Aquí puedes reducir el valor, por ejemplo a 1px o 0px */
+      }
 
-        /* "SOCORRO MÉDICO PRIVADO SA EQU 1SA" */
-        .company-text {
-            color: #8d8d8d;/* No se especificó color, si se requiere otro cambiar aquí */
-            font-weight: 380;
-            font-size: 14px; /* height:0.625rem se interpreta como tamaño de fuente */
-            line-height: normal;
-            letter-spacing: normal;
-            margin-bottom: 5px;
-            width: 600px;
-            padding-left: 26px;
-        }
+      .sectorP{
+        margin-bottom: 1px;
+      }
 
-        /* Línea con teléfono y celular */
-        .contact-line svg, 
-        .web-line svg,
-        .social-line svg,
-        .address-line svg {
-            margin-right: 5px;
-            padding-left: 26px;
-        }
-
-        .contact-line .info-text,
-        .web-line .info-text,
-        .social-line .info-text,
-        .address-line .info-text {
-            color: #0252A3;
-            font-weight: 400;
-            font-size: 8px;
-            line-height: normal;
-         
-        }
-
-        /* Para la línea web que es bold */
-        .web-line .info-text {
-            font-weight: 700;
+      .info-text {
+          display: inline-block;
         
-        }
+      }
 
-        /* Ajuste último texto para Instagram y dirección */
-        .social-line .info-text,
-        .address-line .info-text {
-            font-weight: 400;
-        }
+      /* Estilo "JEFA DEL PROYECTO EQ1" */
+      .job-title {
+          color: #079F90;
+          padding-left: 26px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: normal;
+          letter-spacing: 0.00875rem;
+          
+      }
 
-    </style>
+      /* "SOCORRO MÉDICO PRIVADO SA EQU 1SA" */
+      .company-text {
+          color: #8d8d8d;/* No se especificó color, si se requiere otro cambiar aquí */
+          font-weight: 380;
+          font-size: 14px; /* height:0.625rem se interpreta como tamaño de fuente */
+          line-height: normal;
+          letter-spacing: normal;
+          margin-bottom: 5px;
+          width: 600px;
+          padding-left: 26px;
+      }
+      .job-title_subtitle {
+          color: #079F90;
+          padding-left: 26px;
+          font-weight: 200;
+          font-size: 16px;
+          line-height: normal;
+          letter-spacing: 0.00875rem;
+          padding-left: 4px;
+          
+      }
+
+      /* Línea con teléfono y celular */
+      .contact-line svg, 
+      .web-line svg,
+      .social-line svg,
+      .address-line svg {
+          margin-right: 5px;
+          padding-left: 26px;
+          
+      }
+
+  
+
+      .contact-line .info-text,
+      .web-line .info-text,
+      .social-line .info-text,
+      .address-line .info-text {
+          color: #0252A3;
+          font-weight: 400;
+          font-size: 8px;
+          line-height: normal;
+       
+      }
+
+      /* Para la línea web que es bold */
+      .web-line .info-text {
+          font-weight: 700;
+      
+      }
+
+      /* Ajuste último texto para Instagram y dirección */
+      .social-line .info-text,
+      .address-line .info-text {
+          font-weight: 400;
+ 
+      }
+
+  </style>
 </head>
 <body>
     <div class="container">
