@@ -21,7 +21,6 @@
          padding-top: 10px;
         }
 
-
         .container {
             display: flex;
             flex-direction: row;
@@ -54,7 +53,6 @@
         /* Caja del título (nombre) */
         .title-box {
             width: 400px;
-            
             height: 32px;
             background: #0252A3;
             color: #FFFFFF;
@@ -65,7 +63,6 @@
             font-weight: 150;
             font-size:18px;
             letter-spacing: normal;
-            
         }
 
         /* Caja de información debajo del título */
@@ -80,7 +77,7 @@
             display: flex;
             align-items: center;
             padding-top: 5px;
-            margin-bottom: 0px; /* <-- Aquí puedes reducir el valor, por ejemplo a 1px o 0px */
+            margin-bottom: 0px; 
         }
 
         .sectorP{
@@ -88,11 +85,9 @@
         }
 
         .info-text {
-            display: inline-block;
-          
+            display: inline-block;          
         }
 
-        /* Estilo "JEFA DEL PROYECTO EQ1" */
         .job-title {
             color: #079F90;
             padding-left: 26px;
@@ -100,42 +95,35 @@
             font-size: 16px;
             line-height: normal;
             letter-spacing: 0.00875rem;
-            
         }
 
-        /* "SOCORRO MÉDICO PRIVADO SA EQU 1SA" */
+        .job-title_subtitle {
+            color: #079F90;
+            padding-left: 4px;
+            font-weight: 200;
+            font-size: 16px;
+            line-height: normal;
+            letter-spacing: 0.00875rem;            
+        }
+
         .company-text {
-            color: #8d8d8d;/* No se especificó color, si se requiere otro cambiar aquí */
+            color: #8d8d8d;
             font-weight: 380;
-            font-size: 14px; /* height:0.625rem se interpreta como tamaño de fuente */
+            font-size: 14px; 
             line-height: normal;
             letter-spacing: normal;
             margin-bottom: 5px;
             width: 600px;
             padding-left: 26px;
         }
-        .job-title_subtitle {
-            color: #079F90;
-            padding-left: 26px;
-            font-weight: 200;
-            font-size: 16px;
-            line-height: normal;
-            letter-spacing: 0.00875rem;
-            padding-left: 4px;
-            
-        }
 
-        /* Línea con teléfono y celular */
         .contact-line svg, 
         .web-line svg,
         .social-line svg,
         .address-line svg {
             margin-right: 5px;
-            padding-left: 26px;
-            
+            padding-left: 26px;            
         }
-
-    
 
         .contact-line .info-text,
         .web-line .info-text,
@@ -144,21 +132,21 @@
             color: #0252A3;
             font-weight: 400;
             font-size: 8px;
-            line-height: normal;
-         
+            line-height: normal;         
         }
 
         /* Para la línea web que es bold */
         .web-line .info-text {
-            font-weight: 700;
-        
+            font-weight: 700;        
         }
 
-        /* Ajuste último texto para Instagram y dirección */
-        .social-line .info-text,
-        .address-line .info-text {
-            font-weight: 400;
-   
+        /* Clase hover-darken para enlaces */
+        .hover-darken a {
+            text-decoration: none;
+            color: #0252A3;
+        }
+        .hover-darken a:hover {
+            color: #013e7a;
         }
 
     </style>
@@ -176,15 +164,15 @@
               Florencia P. Baccaro Oses
             </div>
 
-            <div class="info-box">
+            <div class="info-box hover-darken">
                 <div class="info-line">
-                    <span class="info-text job-title">JEFA DE PROYECTO</span>    <span class="job-title_subtitle"> EQ1 S.A.</span>
+                    <span class="info-text job-title">JEFA DE PROYECTO</span> <span class="job-title_subtitle">EQ1 S.A.</span>
                 </div>
                 <div class="info-line sectorP">
-              <!--      <span class="info-text company-text">SOCORRO MÉDICO PRIVADO S.A. EQ1 S.A.</span>-->
+                    <!-- Contenido de empresa opcional -->
                 </div>
 
-                <!-- Teléfonos -->
+                <!-- Dirección a Google Maps -->
                 <div class="info-line contact-line">
                     <svg width="14" height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_3_18)">
@@ -197,10 +185,14 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    <span class="info-text">Virrey Loreto 3636 (C1427CCY), C.A.B.A.</span>
+                    <span class="info-text">
+                      <a href="https://www.google.com/maps/place/Virrey+Loreto+3636+(C1427CCY),+C.A.B.A./@-34.5789488,-58.4587018,3a,75y,94.74h,90t/data=!3m4!1e1!3m2!1sFFQ9JrEsHl0S0qQWTlJH0A!2e0!4m2!3m1!1s0x95bcb5de17477a5d:0xe6fca800873fac56?sa=X&ved=1t:3780&ictx=111" target="_blank">
+                        Virrey Loreto 3636 (C1427CCY), C.A.B.A.
+                      </a>
+                    </span>
                 </div>
 
-                <!-- WEB -->
+                <!-- Teléfono y Cel -->
                 <div class="info-line social-line">
                     <svg width="14" height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_3_21)">
@@ -212,10 +204,13 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    <span class="info-text">(5411) 4000-6672 | Cel. (54911) 3788-7750</span>
+                    <span class="info-text">
+                      <a href="tel:+541140006672">(5411) 4000-6672</a> | 
+                      <a href="tel:+5491137887750">Cel. (54911) 3788-7750</a>
+                    </span>
                 </div>
 
-                <!-- Social line eq1_insumos.medicos (Instagram) -->
+                <!-- WEB -->
                 <div class="info-line web-line">
                     <svg width="14" height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3_23)">
@@ -226,11 +221,13 @@
                             <rect width="10" height="10" fill="white"/>
                           </clipPath>
                         </defs>
-                      </svg> 
-                    <span class="info-text">WWW.EQ1.COM.AR</span>
+                    </svg> 
+                    <span class="info-text">
+                      <a href="https://www.eq1.com.ar/" target="_blank">WWW.EQ1.COM.AR</a>
+                    </span>
                 </div>
 
-                <!-- Dirección -->
+                <!-- Instagram -->
                 <div class="info-line address-line">
                     <svg width="14" height="14" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_3_27)">
@@ -242,7 +239,9 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    <span class="info-text">eq1_insumos.medicos</span>
+                    <span class="info-text">
+                      <a href="https://www.instagram.com/eq1_insumos.medicos/" target="_blank">eq1_insumos.medicos</a>
+                    </span>
                 </div>
 
             </div>
